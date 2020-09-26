@@ -1,0 +1,178 @@
+:root{
+    font-size: 16px;
+}
+
+#map{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+.top-bar{
+    position: fixed;
+    top: 0;
+  
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    display: none;
+    justify-content: center;
+    padding: 0 20px;
+    background-color:rgb(72, 72, 241);
+}
+.top-bar button{
+    margin-right: auto;
+    color: white;
+    background-color: transparent;
+}
+.top-bar h3{
+    color: white;
+    flex-grow: 1;
+    margin-right: auto;
+    margin-left: 10px;
+    margin-top: 0;
+    padding-top: 2px;
+    margin-bottom: 0;
+}
+.info-box{
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    height: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    bottom: 9vh;
+    transition: height 0.2s ease;
+}
+.info-box.active{
+    overflow: hidden;
+    height: 50vh;
+    padding: 20px;
+}
+.add-box{
+
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    height: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    bottom: 9vh;
+    transition: height 0.2s ease;
+}
+.add-box.active{
+    overflow: hidden;
+    height: 40vh;
+    padding: 20px;
+}
+.bottom-bar{
+    position: absolute;
+    bottom: 0;
+    height: 9vh;
+    left: 0;
+    z-index: 2000;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-bar-add{
+
+    width: 110px;
+    position: absolute;
+    height: 110px;
+    top:-60px;
+    left: 50%;
+
+    justify-self: center;
+    transform: translateX(-50%) scale(0.7);
+
+}
+.bottom-bar-bounty{
+
+
+
+    top: 50%;
+    right: 5%;
+  
+    height: 9vh;
+
+    transform:  translateX(-50%) translateY(-50%);
+    position: absolute;
+
+}
+.bottom-bar-bounty button{
+    font-size: 1.5rem;
+    width: 70px;
+    height: 9vh;
+}
+.bottom-bar-explore{
+  
+
+    top: 50%;
+    left: 5%;
+  
+    transform:  translateX(50%) translateY(-50%);
+    position: absolute;
+
+}
+.bottom-bar-explore button{
+    font-size: 1.5rem;
+    
+    width: 70px;
+    height: 9vh;
+}
+#explore{
+
+}
+
+#tab-bounty{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: rgb(238, 238, 238);
+}
+.bt-header{
+    width: 100vw;
+    background-color: #6A79FF;
+    text-align: center;
+    height: 10vh;
+}
+.user{
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: -10px;
+    border-radius: 5px;
+    display: flex;
+    margin:auto;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.116);
+    background-color: white;
+
+}
+.username{
+     margin: 0;
+}
+.bounty-card{
+    width: 80%;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.116);
+    padding: 10px;
+    position: relative;
+    top: -20px;
+    border-radius: 5px;
+    margin:20px auto;
+    background-color: white;
+}
+.bounty-card h5{
+   font-size: 0.8rem;
+   
+}
